@@ -7,6 +7,64 @@ packages:
   gitUrl: https://github.com/prabhakaribm
   gitUsername: prabhakaribm
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_07072026
+  packages:
+  - name: TestJDBCSSLProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.blockingTimeout
+  : "1000"
   jdbcfunc.SAPTxStore.failFastMode: false
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.password
+  : "{AES}pFGqHdsr7K4IiCECQo+0SQ=="
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.keyStore
+  : ""
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.portNumber
+  : "2484"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.databaseName
+  : ORCL
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.trustStore
+  : awsusprod_Truststore
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionEnabled
+  : "false"
+  ? artConnection.TestJDBCSSLProject.project.testjdbcssl.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_07072026.connectionSettings.otherProperties
+  : loginTimeout=60;
